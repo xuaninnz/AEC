@@ -126,7 +126,7 @@ a{
 }
 
 .list--tick{
-    list-style-image: url(../image/tick.svg);
+    list-style-image: url(../image/sprite.svg#tick);
     padding-left: 3rem;
     color: var(--color-headings);
 }
@@ -144,4 +144,25 @@ a{
     .list--inline .list__item{
         padding-left:0;
     }
+}
+
+/*Icon*/
+.icon
+{
+    width:40px;
+    height: 40px;
+}
+
+icon--primary{
+    fill: var(--color-primary);
+}
+
+.icon-container{
+    background: #f3f9fa;
+    width: 64px;
+    height:64px;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
