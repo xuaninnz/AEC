@@ -1,77 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/normalize.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="contact.html" />
     <title>Contact Us</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="nav collapsible">
-          <a aria-label="AEC" class="nav__brand" href="/"
-            ><img src="images/logo_transparent.png" alt=""
-          /></a>
-          <svg class="icon icon--white nav__toggler">
-            <use href="images/sprite.svg#menu"></use>
-          </svg>
-          <ul class="list nav__list collapsible__content">
-            <li class="nav__item">
-              <a href="contact.html">Course</a>
-            </li>
-            <li class="nav__item">
-              <a href="contact.html">Enroll</a>
-            </li>
-            <li class="nav__item">
-              <a href="contact.html">Student Life</a>
-            </li>
-            <li class="nav__item">
-              <a href="contact.html">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <nav class="nav collapsible">
+        <a aria-label="AEC" class="nav__brand" href="/"
+          ><img src="images/logo_transparent.png" alt=""
+        /></a>
+        <svg class="icon icon--white nav__toggler">
+          <use href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item">
+            <a href="contact.html">Course</a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html">Enroll</a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html">Student Life</a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      <h1>
-        Please fill out the form below to request a quote for a project, let us
-        know what you've interested in as the subject line.
-      </h1>
-      <form action="https://formspree.io/f/myyawgap" method="POST">
+    <h1>
+      Please fill out the form below to request a quote for a project, let us
+      know what you've interested in as the subject line.
+    </h1>
+    <form action="https://formspree.io/f/myyawgap" method="POST">
+      <div>
+        <label for="name">Name*</label>
+        <input
+          id="name"
+          type="text"
+          placeholder="First Name"
+          required
+          minlength="1"
+          maxlength="50"
+          name="name"
+        />
+        <input
+          id="name"
+          type="text"
+          placeholder="Last Name"
+          required
+          minlength="1"
+          maxlength="50"
+          name="name"
+        />
         <div>
-          <label for="name">Name*</label>
+          <label for="email">Email*</label>
           <input
-            id="name"
-            type="text"
-            placeholder="First Name"
-            required
-            minlength="1"
-            maxlength="20"
-            name="name"
-          />
-          <input
-            id="name"
-            type="text"
-            placeholder="Last Name"
+            id="email"
+            type="email"
             required
             minlength="1"
             maxlength="30"
-            name="name"
+            name="email"
           />
-        <div>
-          <label for="email">Email*</label>
-          <input id="email" type="email" required minlength="1" maxlength="30" name="email"/>
         </div>
         <div>
           <label for="subject">Subject*</label>
-          <input id="subject" type="text" required minlength="1" maxlength="50" name="subject"/>
+          <input
+            id="subject"
+            type="text"
+            required
+            minlength="1"
+            maxlength="50"
+            name="subject"
+          />
         </div>
         <div>
           <label for="message">Message*</label>
           <textarea
-          style="height:200px"
+            style="height: 200px"
             required
             minlength="1"
             maxlength="100"
@@ -79,85 +94,85 @@
           ></textarea>
         </div>
         <div class="btn__form">
-            <button class="btn btn--secondary btn--stretched" type="submit">Submit</button>
+          <button class="btn btn--secondary btn--stretched" type="submit">
+            Submit
+          </button>
         </div>
-       
-      </form>
+      </div>
+    </form>
 
-      <footer class="block block--dark footer">
-        <div class="container grid footer__sections">
-          <section class="collapsible collapsible--expanded footer__section">
-            <div class="collapsible__header">
-              <h2 class="collapsible__heading footer__heading">Course</h2>
-              <svg class="icon icon--white collapsible__chevron">
-                <use href="images/sprite.svg#chevron"></use>
-              </svg>
-            </div>
-            <div class="collapsible__content">
-              <ul class="list">
-                <li><a href="#">IELTS</a></li>
-                <li><a href="#">PTE</a></li>
-                <li><a href="#">Communication English</a></li>
-              </ul>
-            </div>
-          </section>
-          <section class="collapsible footer__section">
-            <div class="collapsible__header">
-              <h2 class="collapsible__heading footer__heading">Student Life</h2>
-              <svg class="icon icon--white collapsible__chevron">
-                <use href="images/sprite.svg#chevron"></use>
-              </svg>
-            </div>
-            <div class="collapsible__content">
-              <ul class="list">
-                <li><a href="#">Facilities</a></li>
-                <li><a href="#">Accomodation</a></li>
-                <li><a href="#">International Student</a></li>
-              </ul>
-            </div>
-          </section>
-          <section class="collapsible footer__section">
-            <div class="collapsible__header">
-              <h2 class="collapsible__heading footer__heading">Support</h2>
-              <svg class="icon icon--white collapsible__chevron">
-                <use href="images/sprite.svg#chevron"></use>
-              </svg>
-            </div>
-            <div class="collapsible__content">
-              <ul class="list">
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Knowledge Base</a></li>
-                <li><a href="#">FAQ</a></li>
-              </ul>
-            </div>
-          </section>
-          <section class="collapsible footer__section">
-            <div class="collapsible__header">
-              <h2 class="collapsible__heading footer__heading">Contact Us</h2>
-              <svg class="icon icon--white collapsible__chevron">
-                <use href="images/sprite.svg#chevron"></use>
-              </svg>
-            </div>
-            <div class="collapsible__content">
-              <ul class="list">
-                <li><a href="#">Email</a></li>
-                <li><a href="#">Phone</a></li>
-                <li><a href="#">Message</a></li>
-              </ul>
-            </div>
-          </section>
-          <div class="footer__brand">
-            <img src="images/logo_transparent.png" alt="" />
-            <p class="footer__copyright">Copyright 2023 AEC</p>
+    <footer class="block block--dark footer">
+      <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Course</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron"></use>
+            </svg>
           </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">IELTS</a></li>
+              <li><a href="#">PTE</a></li>
+              <li><a href="#">Communication English</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Student Life</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Facilities</a></li>
+              <li><a href="#">Accomodation</a></li>
+              <li><a href="#">International Student</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Support</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Knowledge Base</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Contact Us</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Email</a></li>
+              <li><a href="#">Phone</a></li>
+              <li><a href="#">Message</a></li>
+            </ul>
+          </div>
+        </section>
+        <div class="footer__brand">
+          <img src="images/logo_transparent.png" alt="" />
+          <p class="footer__copyright">Copyright 2023 AEC</p>
         </div>
-      </footer>
-      <script src="js/main.js"></script>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
-    </body>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
-  
-  
