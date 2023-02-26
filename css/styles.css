@@ -1,8 +1,8 @@
 @import "./normalize.css";
 :root {
-  --color-primary: #2584ff;
-  --color-secondary: #00d9ff;
-  --color-accent: #ff3400;
+  --color-primary:#8a2be2;
+  --color-secondary: #ccccff;
+  --color-accent: #de3163;
   --color-headings: #1b0760;
   --color-body: #918ca4;
   --color-body-darker: #5c5577;
@@ -27,6 +27,7 @@ html {
 
 img {
   width: 100%;
+  border-radius: 10px;
 }
 
 body {
@@ -142,7 +143,7 @@ a {
 
 .list {
   list-style: none;
-  padding-left: 0;
+  padding-left: 10px;
 }
 
 .list--inline .list__item {
@@ -339,11 +340,11 @@ a {
 }
 
 .card--primary .badge--primary {
-  background: #126de4;
+  background: var(--color-secondary);
 }
 
 .card--secondary .badge--secondary {
-  background: #02cdf1;
+  background: var(--color-primary);
 }
 
 /* Plans */
@@ -614,7 +615,7 @@ a {
 /* Blocks */
 
 .block {
-  --padding-vertical: 5rem;
+  --padding-vertical: 2rem;
   padding: var(--padding-vertical) 2rem;
 }
 
@@ -630,6 +631,11 @@ a {
 .block--dark {
   background: #000;
   color: #7b858b;
+}
+
+.block--light{
+  background: #fffaf0;
+  color:white;
 }
 
 .block--dark h1, .block--dark h2, .block--dark h3 {
@@ -699,7 +705,8 @@ a {
 
 .nav__brand {
   transform: translateY(5px);
-  width: 150px;
+  width: 80px;
+  padding-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -729,7 +736,6 @@ a {
 
 @media screen and (min-width: 768px) {
   .hero__content {
-    text-align: left;
     align-self: center;
   }
 }
@@ -737,7 +743,14 @@ a {
 @media screen and (min-width: 1024px) {
   .hero {
     padding-top: 0;
+    padding-bottom: 0;
   }
+}
+
+.hero__image{
+  margin-top: 2rem;
+  height: 82%;
+  width: 85%;
 }
 
 /* Domain Block */
@@ -781,8 +794,8 @@ a {
 /* Features */
 
 .feature {
-  gap: 4rem 2rem;
-  margin: 12rem 0;
+  gap: 4rem 4rem;
+  margin: 12rem 0 4rem 0;
 }
 
 .feature:first-of-type {
