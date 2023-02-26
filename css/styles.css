@@ -231,7 +231,7 @@ a {
 }
 
 .btn--primary:hover {
-  background: #3a8ffd;
+  background: var(--color-secondary);
 }
 
 .btn--secondary {
@@ -240,7 +240,7 @@ a {
 }
 
 .btn--secondary:hover {
-  background: #05cdf0;
+  background: var(--color-accent);
 }
 
 .btn--accent {
